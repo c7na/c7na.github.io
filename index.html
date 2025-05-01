@@ -1,5 +1,11 @@
 <html>
   <body>
-    <input type="file">
+    <button id="btn">Select File</button>
+    <input type="file" id="input" style="display: none;">
+    <script>
+      document.querySelector('#btn').addEventListener('click', () => {
+        document.querySelector('#input').click();
+      });
+    </script>
   </body>
 </html>
